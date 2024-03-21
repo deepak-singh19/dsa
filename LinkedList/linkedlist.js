@@ -98,6 +98,10 @@ class LinkedList{
         let current=this.head;
         let previous;
 
+        if(index>this.size){
+            return
+        }
+
         while(count!==index){
             previous=current;
             current=current.next;
@@ -108,11 +112,17 @@ class LinkedList{
 
         previous.next=current;
 
-
+        this.size--;
 
     }
 
     //Clear List 
+
+    clearList(){
+        this.head=null;
+        this.size=0;
+
+    }
 
     // Print the list
 
