@@ -25,3 +25,37 @@ const s1= [1,2,[4,5],6].myFlat();
 const s2= [[9],1,2,[4,5],6,[7,8]].myFlat();
 console.log(s1);
 console.log(s2);
+
+
+
+//Normal Function for flattern the given ARRAY
+
+
+// const myFlat=(arr)=>{
+//     console.log(arr);
+
+//     const result=[];
+
+//     for(let i=0; i<arr.length;i++){
+//         if(Array.isArray(arr[i])){
+//             // console.log("Hi");
+
+//             const flat= myFlat(arr[i]);
+            
+//             result.push(...flat);
+
+
+//         }else{
+
+//             result.push(arr[i]);
+//             // console.log(result);
+//             // console.log(arr[i]);
+
+//         }
+//     }
+
+//     return result;
+
+// }
+
+// console.log(myFlat([[9],1,2,[4,5],6,[7,8]]));
